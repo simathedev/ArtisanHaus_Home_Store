@@ -1,0 +1,32 @@
+export const catalogue = [
+    {
+        id:1,
+        imageURL:'/assets/a3.jpg',
+        category:"Kitchen",
+    },
+    {
+        id:2,
+        imageURL:'/assets/d2.jpg',
+        category:"Lighting",
+    },
+    {
+        id:3,
+        imageURL:'/assets/b4.jpg',
+        category:"Chairs",
+    },
+    {
+        id:4,
+        imageURL:'/assets/f2.jpg',
+        category:"Decor",
+    },
+    {
+        id:5,
+        imageURL:'/assets/c1.jpg',
+        category:"Bathroom",
+    },
+    {
+        id:6,
+        imageURL:'/assets/b3.jpg',
+        category:"Tables",
+    },
+]
