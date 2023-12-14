@@ -2,11 +2,9 @@
 import React, { useState, useEffect } from 'react';
 import { Products } from '@/data';
 import ProductDetailsWidget from '@/widgets/ProductDetailsWidget';
-//import HeaderSection from '@/components/HeaderSection';
+import HeaderSection from '@/components/HeaderSection';
 import SimilarProductsWidget from '@/widgets/SimilarProductsWidget';
 import LoadingSecton from '@/components/LoadingSection';
-import dynamic from "next/dynamic";
-
 
 const ProductPage = ({ params }) => {
   const { id } = params;
@@ -22,12 +20,6 @@ const ProductPage = ({ params }) => {
       setLoading(false);
     }, 1000); // Simulating a delay of 1 second (1000 milliseconds)
   }, [productId]);
-  const HeaderSection = dynamic(
-    () => {
-      return import("@/components/HeaderSection");
-    },
-    { ssr: false }
-  );
 
   if (loading) {
     return (

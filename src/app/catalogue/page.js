@@ -4,9 +4,8 @@ import React, { useState, useEffect } from 'react';
 import { Typography, Grid, CircularProgress, Alert } from '@mui/material';
 import { Products } from '@/data';
 import ProductWidget from '@/widgets/ProductWidget';
-//import HeaderSection from '../../components/HeaderSection';
+import HeaderSection from '../../components/HeaderSection';
 import CategoryFilterWidget from '@/widgets/CategoryFilterWidget';
-import dynamic from "next/dynamic";
 
 const Catalogue = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -46,12 +45,6 @@ const Catalogue = () => {
       }
     }
   }, [selectedCategory, groupedProducts]);
-  const HeaderSection = dynamic(
-    () => {
-      return import("@/components/HeaderSection");
-    },
-    { ssr: false }
-  );
 
   return (
     <div>

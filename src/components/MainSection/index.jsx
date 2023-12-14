@@ -1,18 +1,11 @@
 import React from 'react';
 import { Grid } from '@mui/material';
-//import HeaderSection from '../HeaderSection';
+import HeaderSection from '../HeaderSection';
 import mainBackground from '../../../public/assets/b1.jpg';
 import TextArea from './TextArea';
 import styles from './style.module.scss';
-import dynamic from "next/dynamic";
 
 export default function MainSection() {
-  const HeaderSection = dynamic(
-    () => {
-      return import("../HeaderSection");
-    },
-    { ssr: false }
-  );
   return (
     <div
       style={{

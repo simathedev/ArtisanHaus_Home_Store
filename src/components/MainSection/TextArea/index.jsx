@@ -22,23 +22,22 @@ export default function Index() {
             </Typography>
           </Grid>
           <Grid item xs={10} sm={8} md={6}>
-            <Button
-              variant="contained"
-              color="primary"
-              sx={{
-            
-                color: 'white',
-                backgroundColor: 'brown',
-            '&:hover': {
-              backgroundColor: '#e3d5ca',
-            },
-                width: '100%',
-                padding: '0.8rem',
-              }}
-              onClick={handleCatalogueButtonClick}
-            >
-              View Catalogue
-            </Button>
+          <Button
+  variant="contained"
+  color="success"
+  style={{
+    color: 'white',
+    backgroundColor: 'brown', // Background color for the button
+    '&:hover': {
+      backgroundColor: '#e3d5ca', // Hover background color
+    },
+    width: '100%',
+    padding: '0.8rem',
+  }}
+  onClick={handleCatalogueButtonClick}
+>
+  View Catalogue
+</Button>
           </Grid>
         </Grid>
       </Grid>

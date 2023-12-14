@@ -24,7 +24,7 @@ export default function Index({ imageURL, headingText, id }) {
         }}
       >
         <h2 style={{ fontSize: '24px' }}>{headingText}</h2>
-        <Link href={`/catalogue?category=${headingText}`} passHref>
+        <Link href={`/catalogue?category=${headingText}`}>
           <div style={{ color: 'white', textDecoration: 'underline', cursor: 'pointer', margin:'0rem 1rem'}}>
             Discover
           </div>

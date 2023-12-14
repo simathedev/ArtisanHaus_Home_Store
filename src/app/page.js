@@ -15,18 +15,7 @@ export default function Home() {
       h1: {
         fontFamily: 'Hedvig Serif, serif',
       },
-    },
-    components: {
-      MuiButton: {
-        styleOverrides: {
-          root: {
-            backgroundColor: '#B08968',
-            '&:hover': {
-              backgroundColor: '#e6ccb2',
-            },
-          },
-        },
-      },
+
     },
   });
   

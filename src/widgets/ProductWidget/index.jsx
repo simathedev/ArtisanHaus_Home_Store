@@ -39,7 +39,7 @@ const Index = ({ product }) => {
         </Typography>
         <Button
             variant="contained"
-            sx={{
+            style={{
               backgroundColor: 'brown',
               '&:hover': {
                 backgroundColor: '#e3d5ca',

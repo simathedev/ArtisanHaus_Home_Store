@@ -41,7 +41,7 @@ const Index = ({ product }) => {
 
           <Button
             variant="contained"
-            sx={{ backgroundColor: 'brown',
+            style={{ backgroundColor: 'brown',
             '&:hover': {
               backgroundColor: '#e3d5ca',
             }, border: 'none', borderRadius: '6px', width: '130px', padding:'10px 0px', color: 'white' }}

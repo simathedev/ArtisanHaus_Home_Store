@@ -5,7 +5,6 @@ import { useRouter } from 'next/navigation';
 
 export default function FeaturedWidget({ imageURL, heading, description }) {
   const router = useRouter();
-
   const handleCatalogueButtonClick = () => {
     router.push('/catalogue');
   };
@@ -28,7 +27,7 @@ export default function FeaturedWidget({ imageURL, heading, description }) {
               variant="contained"
              
               onClick={handleCatalogueButtonClick}
-              sx={{margin:'1rem 0rem',
+              style={{margin:'1rem 0rem',
               color: 'white', padding: '1rem',
               backgroundColor: 'brown',
               '&:hover': {
