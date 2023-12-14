@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button, Typography, Grid } from '@mui/material';
 import { useRouter } from 'next/navigation';
+import { motion } from 'framer-motion';
 
 export default function Index() {
   const router = useRouter();
@@ -16,28 +17,39 @@ export default function Index() {
         {/* Nested Grid for text and button */}
         <Grid container direction="column" spacing={2} alignItems="center">
           <Grid item>
-            <Typography variant="body1" align="center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat, velit at
-              fringilla fermentum, dolor odio finibus nulla, et semper justo magna sit amet nulla.
-            </Typography>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+            >
+              <Typography variant="body1" align="center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat, velit
+                at fringilla fermentum, dolor odio finibus nulla, et semper justo magna sit amet
+                nulla.
+              </Typography>
+            </motion.div>
           </Grid>
           <Grid item xs={10} sm={8} md={6}>
-          <Button
-  variant="contained"
-  color="success"
-  style={{
-    color: 'white',
-    backgroundColor: 'brown', // Background color for the button
-    '&:hover': {
-      backgroundColor: '#e3d5ca', // Hover background color
-    },
-    width: '100%',
-    padding: '0.8rem',
-  }}
-  onClick={handleCatalogueButtonClick}
->
-  View Catalogue
-</Button>
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+            >
+              <Button
+                variant="contained"
+                style={{
+                  color: 'white',
+                  backgroundColor: 'brown', // Background color for the button
+                  width: '100%',
+                  padding: '0.8rem',
+                }}
+                onClick={handleCatalogueButtonClick}
+              >
+                View Catalogue
+              </Button>
+            </motion.div>
           </Grid>
         </Grid>
       </Grid>

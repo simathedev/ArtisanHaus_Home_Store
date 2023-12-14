@@ -15,7 +15,7 @@ export default function Index() {
     <>
       {/* Header Row */}
       <Container maxWidth="lg">
-        <Grid container alignItems="center" justifyContent="space-between">
+        <Grid container alignItems="center" justifyContent="space-between" padding="8px 0px">
           {/* Header Name */}
           <Grid item>
             <Typography variant="h4" component="a" href={'/'}>
@@ -33,7 +33,12 @@ export default function Index() {
           </Grid>
         </Grid>
       </Container>
-      <Divider />
+      <Divider
+  sx={{
+    height: '1px',
+    backgroundColor: '#2a211751',
+  }}
+/>
     </>
   );
 }
